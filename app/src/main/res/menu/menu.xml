@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tb_fav"
+        android:icon="@drawable/ic_favorite_fill_white"
+        android:title="Fav"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/more_home"
+        android:icon="@drawable/ic_more_vert"
+        android:orderInCategory="2"
+        android:title=""
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/tb_reminder"
+                android:icon="@drawable/ic_notifications_black_24dp"
+                android:title="Setting Reminder"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/tb_setting"
+                android:icon="@drawable/ic_settings_white_24dp"
+                android:title="Setting Language"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+</menu>
